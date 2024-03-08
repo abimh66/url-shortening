@@ -4,6 +4,8 @@ import Main from './components/Main';
 import Hero from './components/Hero';
 import Shortening from './components/Shortening';
 import Statistics from './components/Statistics';
+import Boost from './components/Boost';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,11 +14,13 @@ function App() {
         <NavBar />
       </Header>
       <Main>
-        <Hero>
+        <Hero />
+        <Statistics>
           <Shortening />
-        </Hero>
-        <Statistics />
+        </Statistics>
+        <Boost />
       </Main>
+      <Footer />
     </div>
   );
 }
@@ -24,23 +28,6 @@ function App() {
 export default App;
 
 /*
-
-  
-
-  Brand Recognition
-
-  Boost your brand recognition with each click. Generic links don’t 
-  mean a thing. Branded links help instil confidence in your content.
-
-  Detailed Records
-
-  Gain insights into who is clicking your links. Knowing when and where 
-  people engage with your content helps inform better decisions.
-
-  Fully Customizable
-
-  Improve brand awareness and content discoverability through customizable 
-  links, supercharging audience engagement.
 
   Boost your links today
 

@@ -1,6 +1,6 @@
 import illustration from '../assets/illustration-working.svg';
 
-function Hero({ children }) {
+function Hero() {
   return (
     <section className="px-5 pb-28 overflow-x-hidden">
       <div className="-mr-48">
@@ -19,7 +19,6 @@ function Hero({ children }) {
           Get Started
         </button>
       </div>
-      {children}
     </section>
   );
 }
