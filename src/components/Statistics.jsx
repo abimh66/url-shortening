@@ -26,7 +26,7 @@ const statisticsContent = [
 
 function Statistics({ children }) {
   return (
-    <section className="p-5 pb-16 flex flex-col gap-10 items-center bg-slate-200 -z-10">
+    <section className="p-5 pb-16 md:px-32 flex flex-col gap-10 items-center bg-slate-200 -z-10">
       {children}
       <div className="flex flex-col gap-24">
         <div className="text-center flex flex-col gap-5">

@@ -2,11 +2,15 @@ import illustration from '../assets/illustration-working.svg';
 
 function Hero() {
   return (
-    <section className="px-5 pb-28 overflow-x-hidden">
-      <div className="-mr-48">
-        <img src={illustration} alt="illustration-working" />
+    <section className="px-5 pb-28  overflow-x-hidden  md:px-32 md:pb-32 md:flex ">
+      <div className="-mr-48 md:m-0">
+        <img
+          src={illustration}
+          alt="illustration-working"
+          className="md:absolute md:right-0 md:w-2/5"
+        />
       </div>
-      <div className="flex flex-col items-center gap-5 text-center mt-10 font-medium text-body">
+      <div className="flex flex-col items-center md:w-1/2 md:text-left md:items-start gap-5 text-center mt-10 font-medium text-body">
         <h1 className="font-bold text-5xl text-very-dark-violet">
           More than just shorter link
         </h1>
