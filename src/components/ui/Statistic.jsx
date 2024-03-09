@@ -1,6 +1,9 @@
-function Statistic({ icon, title, description }) {
+function Statistic({ icon, title, description, margin }) {
   return (
-    <div className="flex flex-col items-center text-center bg-white p-5 gap-5 rounded-lg">
+    <div
+      className={`flex flex-col items-center text-center bg-white p-5 gap-5 rounded-lg md:items-start md:text-left ${
+        margin !== 0 ? 'md:mt-' + margin * 10 : ''
+      }`}>
       <div className="p-5 bg-dark-violet rounded-full -mt-14">
         <img src={icon} alt={title + ' icon'} />
       </div>

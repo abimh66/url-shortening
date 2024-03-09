@@ -22,9 +22,9 @@ const linkContent = [
 
 function Footer() {
   return (
-    <footer className=" bg-very-dark-blue w-full flex flex-col items-center gap-10 p-10">
+    <footer className=" bg-very-dark-blue w-full flex flex-col md:flex-row md:items-start md:px-32 md:justify-between items-center gap-10 p-10">
       <Logo isWhite={true} />
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 md:flex-row md:pl-40 md:gap-16">
         {linkContent.map(({ title, links }) => (
           <LinkList key={title} title={title} links={links} />
         ))}

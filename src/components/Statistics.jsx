@@ -26,26 +26,27 @@ const statisticsContent = [
 
 function Statistics({ children }) {
   return (
-    <section className="p-5 pb-16 md:px-32 flex flex-col gap-10 items-center bg-slate-200 -z-10">
+    <section className="p-5 pb-16 md:px-32 flex flex-col gap-10 items-center bg-slate-200 -z-10 md:gap-20">
       {children}
-      <div className="flex flex-col gap-24">
-        <div className="text-center flex flex-col gap-5">
-          <h2 className="font-bold text-3xl text-very-dark-violet">
-            Advannced Statistics
+      <div className="flex flex-col gap-24 md:gap-16">
+        <div className="text-center flex flex-col items-center gap-5">
+          <h2 className="md:text-4xl font-bold text-3xl text-very-dark-violet">
+            Advanced Statistics
           </h2>
-          <p className="text-gray-violet text-body font-medium">
+          <p className="text-gray-violet text-body font-medium md:w-1/2">
             Track how your links are performing across the web with our advanced
             statistics dashboard.
           </p>
         </div>
 
-        <div className="flex flex-col gap-16">
-          {statisticsContent.map(({ icon, title, description }) => (
+        <div className="flex flex-col gap-16 md:flex-row items-start">
+          {statisticsContent.map(({ icon, title, description }, i) => (
             <Statistic
               key={title}
               icon={icon}
               title={title}
               description={description}
+              margin={i}
             />
           ))}
         </div>
