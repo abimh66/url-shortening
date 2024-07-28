@@ -34,6 +34,7 @@ function Shortening() {
       .then((data) => {
         const newResult = { url: data.url, shortLink: data.shrtlnk };
         setUrlShorteningResults((results) => [...results, newResult]);
+        setInputUrl('');
       })
       .catch((err) => console.log(err))
       .finally(() => setStatus('idle'));
